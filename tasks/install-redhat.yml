@@ -1,11 +1,11 @@
 ---
-- name: 'Enterprise Linux - Add InfluxData repository file'
-  template:
-    src: 'influxdata.repo.j2'
-    dest: '/etc/yum.repos.d/influxdata.repo'
-    force: 'yes'
-    backup: 'yes'
-  when: kapacitor_use_repo
+#- name: 'Enterprise Linux - Add InfluxData repository file'
+#  template:
+#    src: 'influxdata.repo.j2'
+#    dest: '/etc/yum.repos.d/influxdata.repo'
+#    force: 'yes'
+#    backup: 'yes'
+#  when: kapacitor_use_repo
 
 - name: 'Enterprise Linux - Install '
   yum:
